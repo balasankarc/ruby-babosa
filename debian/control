@@ -1,0 +1,26 @@
+Source: ruby-babosa
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Balasankar C <balasankarc@autistici.org>
+Build-Depends: debhelper (>= 9~),
+               gem2deb,
+               rake,
+               ruby-rspec
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-babosa.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-babosa.git
+Homepage: http://github.com/norman/babosa
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-babosa
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: A library for creating slugs.
+ A library for creating slugs. Babosa an extraction and improvement of the
+ string code from FriendlyId, intended to help developers create similar
+ libraries or plugins.
