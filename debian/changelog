@@ -1,5 +1,5 @@
-ruby-babosa (1.0.2-1) UNRELEASED; urgency=medium
+ruby-babosa (1.0.2-1) unstable; urgency=medium
 
-  * Initial release (Closes: #nnnn)
+  * Initial release (Closes: #807465)
 
- -- Balasankar C <balasankarc@autistici.org>  Wed, 09 Dec 2015 10:59:57 +0530
+ -- Balasankar C <balasankarc@autistici.org>  Tue, 08 Dec 2015 21:35:20 +0530

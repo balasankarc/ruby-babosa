@@ -6,7 +6,9 @@ Uploaders: Balasankar C <balasankarc@autistici.org>
 Build-Depends: debhelper (>= 9~),
                gem2deb,
                rake,
-               ruby-rspec
+               ruby-activesupport,
+               ruby-rspec,
+               ruby-unicode
 Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-babosa.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-babosa.git
@@ -18,9 +20,11 @@ Package: ruby-babosa
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
 Depends: ruby | ruby-interpreter,
+         ruby-activesupport,
+         ruby-unicode,
          ${misc:Depends},
          ${shlibs:Depends}
-Description: A library for creating slugs.
- A library for creating slugs. Babosa an extraction and improvement of the
- string code from FriendlyId, intended to help developers create similar
- libraries or plugins.
+Description: library for creating slugs
+ This provides the gem babosa, a library for creating slugs. Babosa is an
+ extraction and improvement of the string code from FriendlyId, intended to
+ help developers create similar libraries or plugins.
