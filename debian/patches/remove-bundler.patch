@@ -1,0 +1,23 @@
+Description: Remove bundler requirement while running tests
+Author: Balasankar C <balasankarc@autistici.org>
+Last-Update: 2015-12-09
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/spec/spec_helper.rb
++++ b/spec/spec_helper.rb
+@@ -5,7 +5,7 @@
+   SimpleCov.start
+ end
+ 
+-require 'bundler/setup'
++#require 'bundler/setup'
+ require 'babosa'
+ 
+ shared_examples_for "a latin transliterator" do
+@@ -33,4 +33,4 @@
+     string = "Γερμανία"
+     expect(t.transliterate(string)).to match(/[\x0-\x7f]/)
+   end
+-end
+\ No newline at end of file
++end
